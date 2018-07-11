@@ -27,4 +27,5 @@ Route::group(['namespace' => 'Admin','prefix' => 'admin'], function () {
     Route::get('login', 'LoginController@showLoginForm')->name('admin.login');
     Route::post('login', 'LoginController@login');
     Route::post('logout', 'LoginController@logout');
+    Route::resource('products','ProductsController');
 });
